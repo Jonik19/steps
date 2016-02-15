@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  display: block;
+  text-align: center;
+
+  padding: 5px 10px;
+}
+
+a.active {
+  /*font-weight: 700;*/
+  /*text-decoration: none;*/
+  color: #333;
+  background: #fd4;
+  /*border: 1px solid #e2e2e2;*/
+  border-radius: 2px;
+}

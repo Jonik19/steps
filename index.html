@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="checkout">
+
+      <div class="checkout-header">
+        <ul>
+          <li><a href="#" data-state-go="step-cart">Корзина</a></li>
+          <li><a href="#" data-state-go="step-additional">Дополнительно</a></li>
+          <li><a href="#" data-state-go="step-contacts">Ваши контактные данные</a></li>
+        </ul>
+      </div>
+
+      <div class="checkout-content">
+        <div data-state="step-cart" style="display: none;">
+          Корзина
+
+          <a href="#" data-state-go="step-additional">Далее -></a>
+        </div>
+
+        <div data-state="step-additional" style="display: none;">
+          Дополнительно
+
+          <a href="#" data-state-go="step-contacts">Далее -></a>
+        </div>
+
+        <div data-state="step-contacts" style="display: none;">
+          Контактные данные
+
+          <a href="#">Оформить заказ</a>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+    <script src="app/state.js" charset="utf-8"></script>
+    <script src="app/app.js" charset="utf-8"></script>
+  </body>
+</html>
