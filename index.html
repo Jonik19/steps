@@ -14,20 +14,64 @@
         <ul>
           <li><a href="#" data-state-go="step-cart">Корзина</a></li>
           <li><a href="#" data-state-go="step-additional">Дополнительно</a></li>
-          <li><a href="#" data-state-go="step-contacts">Ваши контактные данные</a></li>
+          <li><a href="#" data-state-go="step-contacts">Ваши контакты</a></li>
         </ul>
       </div>
 
       <div class="checkout-content">
         <div data-state="step-cart" style="display: none;">
-          Корзина
+          <h2>Корзина</h2>
 
-          <a href="#" data-state-go="step-additional">Далее -></a>
+          <div class="cart-item">
+            <img src="https://www.florist.ru/imf/270/6/605375_147546_1439977398.jpg" alt="" />
+
+            <div class="cart-item-details">
+              <div class="cart-item-name">
+                  Букетик
+              </div>
+              <div class="cart-item-description">
+                Приносим свои извенения, так как описание данного товара, в данный момент отсутствует.
+                Приносим свои извенения, так как описание данного товара, в данный момент отсутствует.
+              </div>
+              <div class="cart-item-price">
+                  365<span class="cart-item-price-postfix">&nbsp;грн.</span>
+              </div>
+
+              <div class="cart-item-delete-block">
+                <a href="#" class="cart-item-delete">Удалить из корзины</a>
+              </div>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="https://www.florist.ru/imf/270/6/602018_128982_1442212143.jpg" alt="" />
+
+            <div class="cart-item-details">
+              <div class="cart-item-name">
+                  Импульсивный букет из белых роз
+              </div>
+              <div class="cart-item-description">
+                  Утонченный вкус и изысканный элексир из 67 белоснежных роз
+                  Авеланч.
+              </div>
+              <div class="cart-item-price">
+                  365<span class="cart-item-price-postfix">&nbsp;грн.</span>
+              </div>
+
+                <div class="cart-item-delete-block">
+                  <a href="#" class="cart-item-delete">Удалить из корзины</a>
+                </div>
+            </div>
+          </div>
+
+          <div style="text-align: right;">
+            <button type="button" name="button">Далее</button>
+          </div>
         </div>
 
         <div data-state="step-additional" style="display: none;">
           Дополнительно
 
+          <a href="#" data-state-go="step-cart">Назад -></a>
           <a href="#" data-state-go="step-contacts">Далее -></a>
         </div>
 
